@@ -9,7 +9,7 @@ export class WeatherApi {
 				params: {
 					lat: lat,
 					lon: lon,
-					appid:"620fff03384dc7d1007b262dc2aed034",
+					appid:process.env.REACT_APP_WEATHER_API_KEY,
 					units: "metric",
 				},
 			}

@@ -10,7 +10,7 @@ export class GeoApi {
 				params: { minPopulation: "1000", limit: "4", namePrefix: searchTerm, countryIds: "PL" },
 				headers: {
 					"X-RapidAPI-Key":
-						"771f786c66mshf0d71ed76da7749p1682ddjsn32a4c81c0ed4",
+						process.env.REACT_APP_GEO_API_AUTH_KEY,
 					"X-RapidAPI-Host": "wft-geo-db.p.rapidapi.com",
 				},
 			}
