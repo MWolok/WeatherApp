@@ -1,0 +1,56 @@
+.weather-info {
+	height: 70%;
+	font-size: 26px;
+}
+.headings {
+	height: 45%;
+	text-transform: uppercase;
+	font-weight: bold;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+.headings p,
+.weather-info p {
+	width: 33.3%;
+	text-align: center;
+}
+
+.headings,
+.weather-info {
+	display: flex;
+	align-items: center;
+}
+.bottom {
+ 
+	height: 140px;
+}
+.week-info {
+	position: relative;
+    
+	padding-top: 30px;
+
+}
+.days-info{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.active {
+    display: none;
+}
+.day {
+	height: 100px;
+	width: 140px;
+
+	border-radius: 20px;
+	text-align: center;
+	background-color: rgb(197, 209, 209, 0.1);
+}
+.temp {
+  
+	margin-top: 20px;
+}
+.day-name{
+    padding-top: 10px;
+}

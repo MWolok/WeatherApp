@@ -1,26 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import DisplayWeather from "./DisplayWeather";
+import { CityContextProvider } from "./context/CityContext";
+import { CloudContextProvider } from "./context/CloudContext";
+import SearchComponent from "./searchComponent";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div className="wrapper">
+			<CityContextProvider>
+				<CloudContextProvider>
+					<SearchComponent></SearchComponent>
+					<DisplayWeather></DisplayWeather>
+				</CloudContextProvider>
+			</CityContextProvider>
+		</div>
+	);
 }
 
 export default App;
