@@ -22,8 +22,13 @@ To run this application on your computer, follow these steps:
 
 2. Using the Application
 Open the application in your web browser.
+<br>
 Begin typing the first 4 letters of a city name, and you will receive suggestions.
+<br>
 Select a city from the suggestions.
+<br>
 View the current temperature, pressure, humidity, and a weather icon representing the current conditions.
+<br>
 Explore the 5-day weather forecast.
+<br>
 The Weather App is now ready to help you check the weather!
